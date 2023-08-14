@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aldino Marsel Pratama</title>
+   <style type="text/css">
+       div.relative { /*elemen HTML dengan nama kelas relative*/
+           position: relative;
+           height: 500px;
+           border: 12px solid rgb(236, 231, 231);
+       }
+       /*membuat kelas box 1-8 unutuk mengatur posisi,jenis font,ukuran font,padding ,
+       warna,margin atas, penulisan vertikal 180drjt*/
+       .profile-img {
+            max-width: 120px;
+            border: 5px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+       .box1 {  /*membuat box1*/
+           position: absolute; /*posisi absolute*/
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*jenis font*/
+           font-size: 38px; /*ukuran font*/
+           color: rgba(216, 192, 148, 0.755);
+           margin-top: 100px; /*margin atas*/
+           writing-mode: vertical-lr; 
+           transform: rotate(180deg);  /*rotasi 180 derajat*/
+       }
+       .box2 {
+           position: absolute;
+           top: 70px;
+           left: 125px;
+           padding-left: 70px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           color: rgb(54, 54, 54);
+       }
+       .box3 {
+           position: absolute;
+           top: 110px;
+           left: 125px;
+           padding-left: 70px;
+           font-size: smaller;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-style: oblique;
+           color: rgba(216, 192, 148, 0.755);
+        
+       }
+       .box4 {
+           position: absolute;
+           top: 160px;
+           left: 125px;
+           width: 370px;
+           padding-left: 70px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-size: 25px;
+           color: rgb(56, 56, 56);
+       }
+       .box5 {
+           position: absolute;
+           top: 260px;
+           left: 130px;
+           width: 450px;
+           padding-left: 70px;
+           font-size: 15px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           line-height: 1.5;
+           color: rgb(134, 134, 134) ;
+           text-align: justify;
+       }
+       .box6 {
+           border: 2px solid rgb(230, 230, 230);
+           background-color: rgb(247, 247, 247);
+           color: rgb(70, 65, 65);
+           position: absolute;
+           top: 250px;
+           right: 100px;
+           width: 300px;
+           padding: 15px;
+           padding-left: 50px;
+           font-size: small;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .box7 {
+           position: absolute;
+           top: 40px;
+           right: 100px;
+       }
+       .box8 {
+           position: absolute;
+           word-spacing: 3px;
+           background-color: rgb(234, 200, 137);
+           bottom: 20px;
+           left: 200px;
+           padding: 10px;
+           padding-left: 40px;
+           padding-right: 30px;
+           border-radius: 50px;
+           font-size: smaller;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+           color: white;
+       }
+
+   </style>
+</head>
+<body>
+   <div class="relative">  <!--div elemen dengan nama kelas relative. !-->
+       <div class="box1">
+           <h1>ABOUT.</h1> <!-- h1 yang terhubung dengan box1-->
+       </div>
+       <div class="box2">
+           <h1>ALDINO MARSEL PRATAMA</h1> <!--h1 yang terhubung dengan box2-->
+       </div>
+       <div class="box3">
+           <p><b>Web designer <em>&minus;</em> FRONTEND Developer</b></p>
+       </div>
+       <div class="box4">
+           <p>A <b>Passionate Student</b> Based In Yogyakarya</p>
+       </div>
+       <div class="box5"> <!--paragraph-->
+           <p>  Hi there! I'm Aldino Marsel Pratama, a passionate INFORMATICS student of AMIKOM UNIVERSITY OF YOGYAKARTA, currently based in Yogyakarya.
+                I have a strong background in FRONTEND Developer and I really enyoj to doing it.
+                When I'm not doing coding, you can find me on MOBILE LEGENDS BANG-BANG i'll be there tp enjoy my free time.</p>
+       </div>
+       <div class="box6"> <!--masing-masing berisi informasi yang berbeda (tanggal lahir, nomor telepon, email, situs web, dan alamat) tentang penulis atau pemilik halaman web.-->
+           <p><b>Birthdate</b> : 09/03/2003</p>
+           <p><b>Phone</b> : (+62)852-9870-3799</p>
+           <p><b>Address</b> : <i>JL.Pahlawan, Km 3</i></p>
+           <p><b>Email</b> :<i>aldinomarsel@students.amikom.ac.id</i></p>
+           <p><b>Instagram</b> : <i>@aldinomarsel_</i></p>
+           <p><b>LinkedIn</b> : <i>ALDINO MARSEL PRATAMA </i></p>
+       </div>
+       <div class="box7"> <!-- gambar diri-->
+        <img src="{{ url_for('static', filename='images/aldino.jpg') }}" class="profile-img">
+       </div>
+       <div class="box8">
+         <a href="">MY PORTOFOLIO &ensp; ></a> 
+       </div>
+   </div>
+</body>
+</html>
